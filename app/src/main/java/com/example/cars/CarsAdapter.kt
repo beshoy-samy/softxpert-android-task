@@ -18,9 +18,15 @@ class CarsAdapter : RecyclerView.Adapter<CarsAdapter.CarVH>() {
 
 
     fun addCars(newCars: MutableList<Car>, refresh: Boolean) {
-        if (refresh) cars = newCars
-        else cars.addAll(newCars)
-        notifyItemRangeInserted(if (refresh) 0 else cars.size - 1, newCars.size)
+        if (refresh) {
+            cars = newCars
+            notifyDataSetChanged()
+        }
+        else{
+            cars.addAll(newCars)
+            notifyItemRangeInserted(cars.size - 1, newCars.size)
+
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarVH {

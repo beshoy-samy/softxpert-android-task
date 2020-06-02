@@ -62,7 +62,7 @@ class MainViewModel : ViewModel() {
     }
 
     fun isRefresh(): Boolean {
-        return page == 0
+        return page == 1
     }
 
 }
