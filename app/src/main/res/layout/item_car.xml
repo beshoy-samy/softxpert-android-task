@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/item_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4dp"
+        android:paddingBottom="@dimen/padding_4"
+        app:cardElevation="4dp"
+        app:strokeColor="#d3d3d3"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@id/parent"
+                app:layout_constraintTop_toTopOf="@id/parent"
+                tools:src="@drawable/ic_broken_image" />
+
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_4"
+                android:textColor="@color/black"
+                tools:text="Audi" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_4"
+                android:textColor="@color/black"
+                tools:text="2004" />
+
+            <TextView
+                android:id="@+id/used"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_4"
+                android:textColor="@color/black"
+                tools:text="Used" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

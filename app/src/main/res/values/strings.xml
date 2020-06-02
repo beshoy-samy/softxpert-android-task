@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cars</string>
+    <string name="no_connection">No internet found</string>
+    <string name="retry">retry</string>
+    <string name="used">Used</string>
+    <string name="new_car">New</string>
+</resources>
